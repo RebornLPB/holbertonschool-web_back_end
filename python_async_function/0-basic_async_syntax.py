@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """Provide an asynchronous delay function that returns a random value."""
 
 import asyncio
