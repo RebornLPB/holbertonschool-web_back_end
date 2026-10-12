@@ -5,10 +5,7 @@ import asyncio
 import random
 
 
-async def wait_random(max_delay ):
-    """Wait for a duration and return a random float.
-    """
-    if not max_delay :
-        max_delay  = 10
-    await asyncio.sleep(max_delay )
-    return random.random(0, max_delay )
+async def wait_random(max_delay: float = 10) -> float:
+    """Wait for a duration and return a random float."""
+    await asyncio.sleep(max_delay)
+    return random.uniform(0, max_delay)
