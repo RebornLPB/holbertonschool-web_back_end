@@ -2,11 +2,12 @@
 """Run asynchronous random waits and collect their delays."""
 
 import asyncio
+from typing import List
 
 wait_random = __import__("0-basic_async_syntax").wait_random
 
 
-async def wait_n(n: int, max_delay: int = 10) -> list[float]:
+async def wait_n(n: int, max_delay: int = 10) -> List[float]:
     """Run up to ``n`` random waits and return their delays in completion order.
 
     Args:
